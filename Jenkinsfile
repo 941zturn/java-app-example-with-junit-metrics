@@ -12,7 +12,7 @@ pipeline {
                 // Get some code from a GitHub repository
                 //git 'https://github.com.cnpmjs.org/jglick/simple-maven-project-with-tests.git'
                 git credentialsId: '1846eae3-26e2-4bca-95b9-7f8e5f0be1c5',
-                    url: 'http://poc-git.volvocars.com:3000/project2/simple-maven-project-with-tests.git'
+                    url: 'http://poc-git.volvocars.com:3000/demo/simple-maven-project-with-tests.git'
 
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
